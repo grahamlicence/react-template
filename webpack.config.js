@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: ['react-hot-loader/patch', './src/index.js'],
@@ -20,9 +21,16 @@ module.exports = {
           loader: 'babel-loader',
         },
       },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: ['file-loader'],
+      },
     ],
   },
   plugins: [
+    new CopyWebpackPlugin({
+      patterns: [{ from: 'src/assets', to: 'assets' }],
+    }),
     new HtmlWebpackPlugin({
       template: './src/template.html',
     }),
