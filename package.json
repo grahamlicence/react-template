@@ -4,7 +4,7 @@
   "author": "Graham Licence",
   "private": true,
   "scripts": {
-    "dev": "NODE_ENV=development webpack-dev-server --hot --mode 'development' --port '8000' --config webpack.config.js",
+    "dev": "NODE_ENV=development webpack serve --hot --mode 'development' --port '8000' --config webpack.config.js",
     "prebuild": "rm -rf dist/*",
     "build": "webpack --config webpack.config.js",
     "test": "jest -c ./test/jest.config.js --maxWorkers=50%"
