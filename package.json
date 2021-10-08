@@ -26,7 +26,7 @@
     "enzyme-adapter-react-16": "1.15.6",
     "file-loader": "6.2.0",
     "html-webpack-plugin": "5.3.1",
-    "jest": "27.0.5",
+    "jest": "27.2.5",
     "prettier": "2.3.1",
     "webpack": "5.40.0",
     "webpack-cli": "4.7.2",
