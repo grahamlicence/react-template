@@ -1,5 +1,5 @@
 import React from 'react';
-const { shallow } = require('enzyme');
+import { shallow } from 'enzyme';
 
 import Main from './';
 

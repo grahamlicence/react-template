@@ -1,4 +1,4 @@
-const styled = require('styled-components').default;
+import { default as styled } from 'styled-components';
 
 const HeaderWrapper = styled.header`
   text-align: center;
